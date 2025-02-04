@@ -29,7 +29,7 @@ public class LineFormatterHard extends LineFormatter {
      *
      * @param line           The string to format
      * @param lineLength     The length of the generated string
-     * @return
+     * @return               Dummy string is returned
      */
     public String formatNextLine(String line, int lineLength) {
         return "dummy";

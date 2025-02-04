@@ -30,7 +30,7 @@ public abstract class LineFormatter {
      *  This function will split a line according to the length.
      *
      * @param inputLine  The line parsed
-     * @param lineLength The length of the splitted lines
+     * @param lineLength The length of the divided lines
      * @return The created string
      */
     public String splitLine(String inputLine, Integer lineLength) {
@@ -76,6 +76,13 @@ public abstract class LineFormatter {
         return nextLine.trim();
     }
 
+    /**
+     * This method must be overwritten to implement a formatting feature
+     *
+     * @param line        The line to format
+     * @param lineLength  The length of the generated line
+     * @return            The formatted line
+     */
     public abstract String formatNextLine(String line, int lineLength);
 
 }

@@ -20,8 +20,8 @@ public class LineFormatterRightAlignTest {
         String inputLine = "This text should be right aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterRightAlign.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = " This text\n should be\n     right\n   aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = " This text\n should be\n     right\n   aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -29,8 +29,8 @@ public class LineFormatterRightAlignTest {
         String inputLine = "This  text  should  be  right  aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterRightAlign.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This  text\nshould  be\n     right\n   aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This  text\nshould  be\n     right\n   aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -38,8 +38,8 @@ public class LineFormatterRightAlignTest {
         String inputLine = "This  textparagraph  should  be  right  aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterRightAlign.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "      This\ntextparagr\n       aph\nshould  be\n     right\n   aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "      This\ntextparagr\n       aph\nshould  be\n     right\n   aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -47,8 +47,8 @@ public class LineFormatterRightAlignTest {
         String inputLine = "This text should be right aligned";
         Integer lineWidth = 20;
         String outputLine = lineFormatterRightAlign.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = " This text should be\n       right aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = " This text should be\n       right aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -56,8 +56,8 @@ public class LineFormatterRightAlignTest {
         String inputLine = "This text should be right aligned";
         Integer lineWidth = 30;
         String outputLine = lineFormatterRightAlign.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "     This text should be right\n                       aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "     This text should be right\n                       aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
 }

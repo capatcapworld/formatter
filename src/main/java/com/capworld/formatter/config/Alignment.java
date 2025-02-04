@@ -9,7 +9,7 @@ public enum Alignment {
 
     public final String alignment;
 
-    private Alignment(String alignment) {
+    Alignment(String alignment) {
         this.alignment = alignment;
     }
 

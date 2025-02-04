@@ -11,28 +11,24 @@ public class Parameters {
         return alignment;
     }
 
-    public void setAlignment(Alignment alignment) {
-        this.alignment = alignment;
-    }
-
     public Integer getWidth() {
         return width;
     }
 
-    public void setWidth(Integer width) {
-        this.width = width;
-    }
-
     public static String showHelp() {
-       return "This program takes two parametes: \n\n" +
-               "<parameter 1>\n" +
-               "   left_align  : Left align text\n" +
-               "   right_align : Right align text\n" +
-               "   center      : Center align text\n" +
-               "   hard        : Hard align text\n" +
-               " q or quit     : quit program.\n" +
-               "<parameter 2>\n" +
-               "   <integer>   : The number of character on a line.";
+        return """
+                This program takes two parameters:\s
+                
+                <parameter 1>
+                   left_align  : Left align text
+                   right_align : Right align text
+                   center      : Center align text
+                   hard        : Hard align text
+                 q or quit     : quit program.
+                <parameter 2>
+                   <integer>   : The number of character on a line.
+                
+                """;
     }
 
     public Parameters getParameters(String[] args) throws  FormatterException {

@@ -11,7 +11,7 @@ public class LineFormatterHardTest {
     LineFormatter lineFormatterHard;
 
     @Before
-    public void init() {
+    public void onSetup() {
         lineFormatterHard = new LineFormatterHard();
     }
 
@@ -20,8 +20,8 @@ public class LineFormatterHardTest {
         String inputLine = "This text should be hard aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterHard.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This text \nshould be \nhard align\ned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This text \nshould be \nhard align\ned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
 
@@ -30,8 +30,8 @@ public class LineFormatterHardTest {
         String inputLine = "This text should be hard aligned";
         Integer lineWidth = 20;
         String outputLine = lineFormatterHard.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This text should be \nhard aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This text should be \nhard aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -39,8 +39,8 @@ public class LineFormatterHardTest {
         String inputLine = "This text should be hard aligned";
         Integer lineWidth = 30;
         String outputLine = lineFormatterHard.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This text should be hard align\ned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This text should be hard align\ned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -48,8 +48,8 @@ public class LineFormatterHardTest {
         String inputLine = "This text should be hard aligned";
         Integer lineWidth = 40;
         String outputLine = lineFormatterHard.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This text should be hard aligned";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This text should be hard aligned";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
 }

@@ -9,7 +9,7 @@ public class LineFormatterCenter extends LineFormatter {
      *
      * @param line       The string to format
      * @param lineLength The length of the generated string
-     * @return
+     * @return The formatted string
      */
     public String formatNextLine(String line, int lineLength) {
         StringBuilder sb = new StringBuilder(lineLength);

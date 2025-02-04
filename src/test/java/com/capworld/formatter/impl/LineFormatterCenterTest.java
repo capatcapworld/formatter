@@ -20,8 +20,8 @@ public class LineFormatterCenterTest {
         String inputLine = "This text should be center aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This text \nshould be \n  center  \n aligned  ";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This text \nshould be \n  center  \n aligned  ";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -29,8 +29,8 @@ public class LineFormatterCenterTest {
         String inputLine = "This  text  should  be  center aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This  text\nshould  be\n  center  \n aligned  ";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This  text\nshould  be\n  center  \n aligned  ";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -38,8 +38,8 @@ public class LineFormatterCenterTest {
         String inputLine = "This  textparagraph  should  be  center  aligned";
         Integer lineWidth = 10;
         String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "   This   \ntextparagr\n   aph    \nshould  be\n  center  \n aligned  ";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "   This   \ntextparagr\n   aph    \nshould  be\n  center  \n aligned  ";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -47,8 +47,8 @@ public class LineFormatterCenterTest {
         String inputLine = "This text should be center aligned";
         Integer lineWidth = 20;
         String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "This text should be \n   center aligned   ";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "This text should be \n   center aligned   ";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
 
@@ -57,8 +57,8 @@ public class LineFormatterCenterTest {
         String inputLine = "This text should be center aligned";
         Integer lineWidth = 30;
         String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "  This text should be center  \n           aligned            ";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "  This text should be center  \n           aligned            ";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
     @Test
@@ -66,8 +66,8 @@ public class LineFormatterCenterTest {
         String inputLine = "This text should be center aligned";
         Integer lineWidth = 40;
         String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
-        String expecedOutputLine = "   This text should be center aligned   ";
-        assertEquals(expecedOutputLine, outputLine);
+        String expectedOutputLine = "   This text should be center aligned   ";
+        assertEquals(expectedOutputLine, outputLine);
     }
 
 }
