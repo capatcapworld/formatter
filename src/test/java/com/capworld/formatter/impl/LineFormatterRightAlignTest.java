@@ -60,4 +60,13 @@ public class LineFormatterRightAlignTest {
         assertEquals(expectedOutputLine, outputLine);
     }
 
+    @Test
+    public void SplitTestWith0() {
+        String inputLine = "";
+        Integer lineWidth = 10;
+        String outputLine = lineFormatterRightAlign.splitLine(inputLine, lineWidth);
+        String expectedOutputLine = "          ";
+        assertEquals(expectedOutputLine, outputLine);
+    }
+
 }

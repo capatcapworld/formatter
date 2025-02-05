@@ -70,4 +70,13 @@ public class LineFormatterCenterTest {
         assertEquals(expectedOutputLine, outputLine);
     }
 
+    @Test
+    public void SplitTestWith0() {
+        String inputLine = "";
+        Integer lineWidth = 10;
+        String outputLine = lineFormatterCenter.splitLine(inputLine, lineWidth);
+        String expectedOutputLine = "          ";
+        assertEquals(expectedOutputLine, outputLine);
+    }
+
 }

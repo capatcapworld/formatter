@@ -16,6 +16,7 @@ public class LineFormatterHard extends LineFormatter {
     public String splitLine(String inputLine, Integer lineLength) {
         int inputLineLength = inputLine.length();
         StringBuilder sbInputLine = new StringBuilder(inputLine);
+        if (sbInputLine.isEmpty()) return " ".repeat(lineLength);
         for (int i = lineLength;i < inputLineLength; i = i+lineLength+1) {
             sbInputLine.insert(i,"\n");
             inputLineLength++;
