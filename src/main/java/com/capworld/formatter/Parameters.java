@@ -1,5 +1,6 @@
-package com.capworld.formatter.config;
+package com.capworld.formatter;
 
+import com.capworld.formatter.domain.Alignment;
 import com.capworld.formatter.exception.FormatterException;
 
 public class Parameters {

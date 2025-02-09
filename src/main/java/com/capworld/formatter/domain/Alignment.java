@@ -1,4 +1,4 @@
-package com.capworld.formatter.config;
+package com.capworld.formatter.domain;
 
 public enum Alignment {
     LEFT_ALIGN("left_align"),

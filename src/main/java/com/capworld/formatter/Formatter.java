@@ -1,7 +1,6 @@
 package com.capworld.formatter;
 
-import com.capworld.formatter.config.Alignment;
-import com.capworld.formatter.config.Parameters;
+import com.capworld.formatter.domain.Alignment;
 import com.capworld.formatter.exception.FormatterException;
 import com.capworld.formatter.impl.LineFormatterCenter;
 import com.capworld.formatter.impl.LineFormatterHard;
